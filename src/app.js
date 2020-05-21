@@ -6,7 +6,7 @@ const viewspath = path.join(__dirname,'../templates/views')
 const partialsPath = path.join(__dirname,'../templates/partials')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
-
+const port = process.env.PORT || 3000
 app.set('view engine','hbs')
 
 app.use(express.static(path.join(__dirname,'../public')))
@@ -79,7 +79,7 @@ app.get('/help/*',(req,res)=>{
     res.send('help article not found',
     res.render('404'),{
         title:404,
-        name:'Andrew',
+        name:'Ridham',
         errorMessage:'Article not found'
     }
     )
@@ -93,7 +93,7 @@ app.get('*',(req,res)=>{
     }
 })
 
-app.listen(3000,()=>{
-    console.log('Server on port 3000')
+app.listen(port,()=>{
+    console.log('Server on port '+port)
 })
 
