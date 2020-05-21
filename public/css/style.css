@@ -1,0 +1,46 @@
+
+h1{
+    color: grey;
+}
+img{
+    width: 250px;
+}
+input{
+    border: 1px solid #cccccc;
+    padding:8px ;
+}
+button{
+ cursor: pointer;
+ border: 1px solid #888888;
+ background: #888888;
+ color: white;
+ padding: 8px;
+}
+.nav{
+    background-color:  #888888;
+    height: 40px;
+    margin-bottom: 50px;
+    width: 100%;
+    
+}
+.nav a{
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    text-align: center;
+}
+.nav a:hover{
+text-decoration: underline;
+color: white;
+}
+
+.main-content{
+   text-align: center;
+   
+}
+
+.footer{
+color: #888888;
+font-weight: bold;
+margin-top: 50px;
+    }
